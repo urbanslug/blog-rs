@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="tile is-ancestor">
+
+  <div class="tile is-3 is-vertical is-parent">
+    <div class="tile is-child">
+      <div id="search-container" class="field">
+        <p class="control has-icons-left">
+          <input id="search" class="input is-small" type="text" placeholder="Search">
+          <span class="icon is-small is-left">
+            <i class="fas fa-search"></i>
+          </span>
+        </p>
+
+      </div> <!-- End search  -->
+      <div class="tile search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+
+    <div class="tile is-child ">
+      <p class="title">Topics</p>
+    </div>
+  </div>
+
+  <div class="tile is-parent">
+    <div class="tile is-child">
+      <h1 class="title">The Urbanslug Blog</h1>
+      <p>Click <a href="/posts/">here</a> to see my posts.</p>
+    </div>
+  </div>
+
+</div>
+{% endblock content %}

@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://blog.urbanslug.com"
 
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -13,3 +14,10 @@ build_search_index = true
 
 [extra]
 # Put all your custom variables here
+
+highlight_theme = "base16-ocean-light"
+title = "urbanslug blog"
+taxonomies = [
+  {name = "categories", paginate_by = 5},
+  {name = "tags", paginate_by = 5},
+]
